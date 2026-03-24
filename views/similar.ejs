@@ -1,0 +1,32 @@
+<%- include('partials/header', { title: 'Similar to Quote #' + quote.id }) %>
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="/">Home</a> &rsaquo; <a href="/quotes">Quotes</a> &rsaquo;
+    <a href="/quotes/<%= quote.id %>">Quote #<%= quote.id %></a> &rsaquo; Similar
+  </div>
+
+  <h2>Quotes Similar to #<%= quote.id %></h2>
+  <p style="margin-bottom:1rem;color:#636e72">Based on shared tags: <%= quote.tags.join(', ') %></p>
+
+  <% if (similar.length === 0) { %>
+    <p class="empty">No similar quotes found.</p>
+  <% } else { %>
+    <% similar.forEach(function(q) { %>
+    <div class="card">
+      <blockquote>&ldquo;<%= q.text %>&rdquo;</blockquote>
+      <div class="meta">
+        &mdash; <a href="/authors/<%= q.author %>"><%= authors[q.author].name %></a>
+        <a href="/quotes/<%= q.id %>">View &rarr;</a>
+      </div>
+    </div>
+    <% }) %>
+  <% } %>
+
+  <ul>
+    <li><a href="/quotes/<%= quote.id %>/similar/by-tag">Group by tag</a></li>
+    <li><a href="/quotes/<%= quote.id %>">Back to quote</a></li>
+  </ul>
+</div>
+
+<%- include('partials/footer') %>

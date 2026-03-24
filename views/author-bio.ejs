@@ -1,0 +1,23 @@
+<%- include('partials/header', { title: author.name + ' \u2014 Biography' }) %>
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="/">Home</a> &rsaquo; <a href="/authors">Authors</a> &rsaquo;
+    <a href="/authors/<%= slug %>"><%= author.name %></a> &rsaquo; Biography
+  </div>
+
+  <h2><%= author.name %> \u2014 Full Biography</h2>
+  <p class="dates" style="color:#636e72;margin-bottom:1rem"><%= author.born %><%= author.died ? ' \u2014 ' + author.died : ' \u2014 Present' %></p>
+
+  <div class="card">
+    <p><%= author.bio %></p>
+  </div>
+
+  <ul>
+    <li><a href="/authors/<%= slug %>">Author profile</a></li>
+    <li><a href="/authors/<%= slug %>/quotes">Quotes by <%= author.name %></a></li>
+    <li><a href="/authors">All authors</a></li>
+  </ul>
+</div>
+
+<%- include('partials/footer') %>

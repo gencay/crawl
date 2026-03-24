@@ -1,0 +1,32 @@
+<%- include('partials/header', { title: 'Tag: ' + tag }) %>
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="/">Home</a> &rsaquo; <a href="/tags">Tags</a> &rsaquo; <%= tag %>
+  </div>
+
+  <h2>Quotes tagged &ldquo;<%= tag %>&rdquo;</h2>
+
+  <% if (quotes.length === 0) { %>
+    <p class="empty">No quotes found with this tag.</p>
+  <% } else { %>
+    <% quotes.forEach(function(q) { %>
+    <div class="card">
+      <blockquote>&ldquo;<%= q.text %>&rdquo;</blockquote>
+      <div class="meta">
+        &mdash; <a href="/authors/<%= q.author %>"><%= authors[q.author].name %></a>
+        <a href="/quotes/<%= q.id %>">View &rarr;</a>
+      </div>
+      <div class="meta" style="margin-top:.3rem">
+        <% q.tags.forEach(function(t) { %>
+          <a href="/tags/<%= t %>" class="tag"><%= t %></a>
+        <% }) %>
+      </div>
+    </div>
+    <% }) %>
+  <% } %>
+
+  <a href="/tags" class="back-link">&larr; All tags</a>
+</div>
+
+<%- include('partials/footer') %>

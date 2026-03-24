@@ -1,0 +1,19 @@
+<%- include('partials/header', { title: 'Calendar: ' + year + '-' + month + '-' + day }) %>
+
+<div class="container">
+  <h2>Calendar: <%= year %>-<%= month %>-<%= day %></h2>
+  <p>This is an infinite-depth page that generates links to the next and previous days.</p>
+
+  <div class="card">
+    <p>Viewing date: <strong><%= year %>-<%= month %>-<%= day %></strong></p>
+  </div>
+
+  <div style="display:flex;gap:1rem;margin:1.5rem 0">
+    <a href="/infinite/<%= prevYear %>/<%= prevMonth %>/<%= prevDay %>">&larr; Previous Day</a>
+    <a href="/infinite/<%= nextYear %>/<%= nextMonth %>/<%= nextDay %>">Next Day &rarr;</a>
+  </div>
+
+  <a href="/" class="back-link">&larr; Home</a>
+</div>
+
+<%- include('partials/footer') %>

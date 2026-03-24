@@ -1,0 +1,37 @@
+<%- include('partials/header', { title: quote.text.substring(0, 40) + '...' }) %>
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="/">Home</a> &rsaquo; <a href="/quotes">Quotes</a> &rsaquo; Quote #<%= quote.id %>
+  </div>
+
+  <div class="card">
+    <blockquote>&ldquo;<%= quote.text %>&rdquo;</blockquote>
+    <div class="meta">
+      &mdash; <a href="/authors/<%= quote.author %>"><%= authors[quote.author].name %></a>
+    </div>
+  </div>
+
+  <h3>Tags</h3>
+  <div style="margin-bottom:1rem">
+    <% quote.tags.forEach(function(t) { %>
+      <a href="/tags/<%= t %>" class="tag"><%= t %></a>
+    <% }) %>
+  </div>
+
+  <ul>
+    <li><a href="/quotes/<%= quote.id %>/similar">Similar Quotes</a></li>
+    <li><a href="/quotes/<%= quote.id %>#comments">Comments section</a></li>
+    <li><a href="/authors/<%= quote.author %>">About the Author</a></li>
+    <li><a href="/authors/<%= quote.author %>/quotes">More by this author</a></li>
+  </ul>
+
+  <a href="/quotes" class="back-link">&larr; Back to all quotes</a>
+
+  <div id="comments" style="margin-top:2rem">
+    <h3>Comments</h3>
+    <p class="empty">No comments yet.</p>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

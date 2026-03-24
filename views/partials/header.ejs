@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= typeof title !== 'undefined' ? title + ' | ' : '' %>Quotes & Authors</title>
+  <link rel="stylesheet" href="/style.css">
+<% if (typeof canonical !== 'undefined') { %>
+  <link rel="canonical" href="<%= canonical %>">
+<% } %>
+<% if (typeof nofollow !== 'undefined' && nofollow) { %>
+  <meta name="robots" content="nofollow">
+<% } %>
+</head>
+<body>
+<nav>
+  <div class="container">
+    <a href="/" class="brand">Quotes &amp; Authors</a>
+    <a href="/">Home</a>
+    <a href="/quotes">Quotes</a>
+    <a href="/authors">Authors</a>
+    <a href="/tags">Tags</a>
+    <a href="/about">About</a>
+    <a href="/about#team">About Team</a>
+    <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+    <a href="javascript:void(0)">JS Link</a>
+    <a href="mailto:info@example.com">Email Us</a>
+  </div>
+</nav>

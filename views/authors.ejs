@@ -1,0 +1,18 @@
+<%- include('partials/header', { title: 'Authors' }) %>
+
+<div class="container">
+  <h2>All Authors</h2>
+
+  <div class="author-grid">
+    <% Object.keys(authors).forEach(function(slug) { var a = authors[slug]; %>
+    <div class="author-card">
+      <h3><a href="/authors/<%= slug %>"><%= a.name %></a></h3>
+      <p class="dates"><%= a.born %><%= a.died ? ' \u2014 ' + a.died : '' %></p>
+      <p style="font-size:.85rem;color:#636e72;margin-top:.3rem"><%= quoteCounts[slug] || 0 %> quote<%= (quoteCounts[slug] || 0) !== 1 ? 's' : '' %></p>
+      <a href="/authors/<%= slug %>/quotes" style="font-size:.85rem">View quotes &rarr;</a>
+    </div>
+    <% }) %>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,38 @@
+<%- include('partials/header', { title: 'Quotes \u2014 Page ' + currentPage, canonical: 'http://localhost:3000/quotes' }) %>
+
+<div class="container">
+  <h2>All Quotes</h2>
+
+  <div class="sort-links">
+    Sort: <a href="/quotes?sort=newest">Newest</a> <a href="/quotes?sort=oldest">Oldest</a>
+    | <a href="/quotes">Default</a>
+    | <a href="/quotes">Self-link</a>
+  </div>
+
+  <% quotes.forEach(function(q) { %>
+  <div class="card">
+    <blockquote>&ldquo;<%= q.text %>&rdquo;</blockquote>
+    <div class="meta">
+      &mdash; <a href="/authors/<%= q.author %>"><%= authors[q.author].name %></a>
+      <% q.tags.forEach(function(t) { %>
+        <a href="/tags/<%= t %>" class="tag"><%= t %></a>
+      <% }) %>
+    </div>
+    <div class="meta" style="margin-top:.4rem">
+      <a href="/quotes/<%= q.id %>">View details</a>
+    </div>
+  </div>
+  <% }) %>
+
+  <div class="pagination">
+    <% for (var p = 1; p <= totalPages; p++) { %>
+      <% if (p === currentPage) { %>
+        <span class="active"><%= p %></span>
+      <% } else { %>
+        <a href="/quotes/page/<%= p %>"><%= p %></a>
+      <% } %>
+    <% } %>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

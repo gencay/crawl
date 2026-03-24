@@ -1,0 +1,47 @@
+<%- include('partials/header', { title: 'Home', canonical: 'http://localhost:3000/' }) %>
+
+<div class="hero">
+  <div class="container">
+    <h1>Quotes &amp; Authors</h1>
+    <p>A curated collection of timeless wisdom from history&rsquo;s greatest minds</p>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Featured Quotes</h2>
+  <% quotes.slice(0, 5).forEach(function(q) { %>
+  <div class="card">
+    <blockquote>&ldquo;<%= q.text %>&rdquo;</blockquote>
+    <div class="meta">
+      &mdash; <a href="/authors/<%= q.author %>"><%= authors[q.author].name %></a>
+      <% q.tags.forEach(function(t) { %>
+        <a href="/tags/<%= t %>" class="tag"><%= t %></a>
+      <% }) %>
+    </div>
+    <div class="meta" style="margin-top:.4rem">
+      <a href="/quotes/<%= q.id %>">Read more &rarr;</a>
+    </div>
+  </div>
+  <% }) %>
+
+  <h2>Explore</h2>
+  <ul>
+    <li><a href="/quotes">Browse All Quotes</a></li>
+    <li><a href="/authors">Browse Authors</a></li>
+    <li><a href="/tags">Browse by Tag</a></li>
+    <li><a href="/about">About This Site</a></li>
+  </ul>
+
+  <h2>More Links</h2>
+  <ul>
+    <li><a href="http://localhost:3000/quotes">Quotes (absolute URL)</a></li>
+    <li><a href="//localhost:3000/authors">Authors (protocol-relative)</a></li>
+    <li><a href="/old-quotes">Old Quotes (redirect)</a></li>
+    <li><a href="/infinite">Infinite Calendar (trap)</a></li>
+    <li><a href="/slow-page">Slow Page (2s delay)</a></li>
+    <li><a href="/redirect-chain">Redirect Chain</a></li>
+    <li><a href="/quotes/index">Quotes Index (duplicate)</a></li>
+  </ul>
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,34 @@
+<%- include('partials/header', { title: author.name }) %>
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="/">Home</a> &rsaquo; <a href="/authors">Authors</a> &rsaquo; <%= author.name %>
+  </div>
+
+  <h2><%= author.name %></h2>
+  <p class="dates" style="color:#636e72;margin-bottom:1rem"><%= author.born %><%= author.died ? ' \u2014 ' + author.died : ' \u2014 Present' %></p>
+
+  <p style="margin-bottom:1.5rem"><%= author.bio.substring(0, 150) %>\u2026</p>
+
+  <ul>
+    <li><a href="/authors/<%= slug %>/quotes">All quotes by <%= author.name %></a></li>
+    <li><a href="/authors/<%= slug %>/bio">Full biography</a></li>
+  </ul>
+
+  <h3>Selected Quotes</h3>
+  <% quotes.slice(0, 3).forEach(function(q) { %>
+  <div class="card">
+    <blockquote>&ldquo;<%= q.text %>&rdquo;</blockquote>
+    <div class="meta">
+      <a href="/quotes/<%= q.id %>">View &rarr;</a>
+      <% q.tags.forEach(function(t) { %>
+        <a href="/tags/<%= t %>" class="tag"><%= t %></a>
+      <% }) %>
+    </div>
+  </div>
+  <% }) %>
+
+  <a href="/authors" class="back-link">&larr; All authors</a>
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,138 @@
+/* crawl-site styles */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #2d3436;
+  background: #f8f9fa;
+}
+
+a { color: #0984e3; text-decoration: none; transition: color .2s; }
+a:hover { color: #0652DD; text-decoration: underline; }
+
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
+
+/* ── Nav ─────────────────────────────────────── */
+nav {
+  background: #2d3436;
+  padding: .75rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+nav .container { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+nav .brand { color: #fff; font-weight: 700; font-size: 1.15rem; }
+nav a { color: #dfe6e9; font-size: .9rem; }
+nav a:hover { color: #fff; text-decoration: none; }
+
+/* ── Hero ────────────────────────────────────── */
+.hero {
+  background: linear-gradient(135deg, #0984e3, #6c5ce7);
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.hero h1 { font-size: 2.2rem; margin-bottom: .5rem; }
+.hero p { font-size: 1.1rem; opacity: .9; }
+
+/* ── Cards ───────────────────────────────────── */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08);
+  transition: box-shadow .2s;
+}
+.card:hover { box-shadow: 0 4px 12px rgba(0,0,0,.12); }
+.card blockquote {
+  font-size: 1.1rem;
+  font-style: italic;
+  border-left: 4px solid #0984e3;
+  padding-left: 1rem;
+  margin-bottom: .75rem;
+  color: #2d3436;
+}
+.card .meta { font-size: .85rem; color: #636e72; }
+.card .meta a { margin-right: .5rem; }
+
+/* ── Tags ────────────────────────────────────── */
+.tag {
+  display: inline-block;
+  background: #dfe6e9;
+  color: #2d3436;
+  border-radius: 999px;
+  padding: .2rem .7rem;
+  font-size: .78rem;
+  margin: .15rem .2rem;
+  transition: background .2s;
+}
+.tag:hover { background: #b2bec3; text-decoration: none; }
+
+/* ── Section headings ────────────────────────── */
+h2 { font-size: 1.5rem; margin: 1.5rem 0 1rem; color: #2d3436; }
+h3 { font-size: 1.15rem; margin: 1rem 0 .5rem; }
+
+/* ── Author list ─────────────────────────────── */
+.author-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.author-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08);
+}
+.author-card h3 { margin-top: 0; }
+.author-card .dates { font-size: .82rem; color: #636e72; }
+
+/* ── Tags index ──────────────────────────────── */
+.tag-grid { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; }
+.tag-large {
+  display: inline-flex; align-items: center; gap: .4rem;
+  background: #fff; border: 1px solid #dfe6e9; border-radius: 8px;
+  padding: .5rem 1rem; font-size: .92rem; transition: border-color .2s;
+}
+.tag-large:hover { border-color: #0984e3; text-decoration: none; }
+.tag-large .count {
+  background: #0984e3; color: #fff; border-radius: 999px;
+  font-size: .72rem; padding: .1rem .45rem; min-width: 1.3rem; text-align: center;
+}
+
+/* ── Pagination ──────────────────────────────── */
+.pagination {
+  display: flex; gap: .5rem; justify-content: center;
+  margin: 2rem 0; flex-wrap: wrap;
+}
+.pagination a, .pagination span {
+  padding: .4rem .85rem; border-radius: 6px;
+  border: 1px solid #dfe6e9; font-size: .9rem;
+}
+.pagination .active { background: #0984e3; color: #fff; border-color: #0984e3; }
+.pagination a:hover { background: #f1f2f6; text-decoration: none; }
+
+/* ── About sections ──────────────────────────── */
+.section { padding: 1.5rem 0; border-bottom: 1px solid #eee; }
+.section:last-child { border-bottom: none; }
+
+/* ── Footer ──────────────────────────────────── */
+footer {
+  background: #2d3436; color: #b2bec3; padding: 1.5rem 0;
+  margin-top: 3rem; font-size: .85rem; text-align: center;
+}
+footer a { color: #74b9ff; }
+footer .links { margin-top: .5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* ── Misc ────────────────────────────────────── */
+.breadcrumb { font-size: .85rem; color: #636e72; margin-bottom: 1rem; }
+.breadcrumb a { color: #0984e3; }
+.back-link { display: inline-block; margin: 1rem 0; font-size: .9rem; }
+.sort-links { margin-bottom: 1rem; font-size: .9rem; }
+.sort-links a { margin-right: .75rem; }
+.empty { color: #636e72; font-style: italic; padding: 2rem 0; text-align: center; }

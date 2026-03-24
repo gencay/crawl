@@ -1,0 +1,16 @@
+<%- include('partials/header', { title: 'Tags' }) %>
+
+<div class="container">
+  <h2>Browse by Tag</h2>
+
+  <div class="tag-grid">
+    <% tags.forEach(function(t) { %>
+      <a href="/tags/<%= t.name %>" class="tag-large">
+        <%= t.name %>
+        <span class="count"><%= t.count %></span>
+      </a>
+    <% }) %>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

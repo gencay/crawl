@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Map — Crawler Reference | Quotes & Authors</title>
+  <link rel="stylesheet" href="/crawl/style.css">
+
+
+</head>
+<body>
+<nav>
+  <div class="container">
+    <a href="/crawl/" class="brand">Quotes &amp; Authors</a>
+    <a href="/crawl/">Home</a>
+    <a href="/crawl/quotes">Quotes</a>
+    <a href="/crawl/authors">Authors</a>
+    <a href="/crawl/tags">Tags</a>
+    <a href="/crawl/about">About</a>
+    <a href="/crawl/about#team">About Team</a>
+    <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+    <a href="javascript:void(0)">JS Link</a>
+    <a href="mailto:info@example.com">Email Us</a>
+  </div>
+</nav>
+
+
+<div class="container">
+  <h2>🗺️ Complete Site Map</h2>
+  <p style="color:var(--slate-500);margin-bottom:2rem">
+    This page shows the full URL structure of the site. Use it as a reference to verify your crawler discovered all pages.
+    <strong>This page is not linked from anywhere on the site</strong> — a correct crawler would only find it if given this URL directly.
+  </p>
+
+  <!-- Site structure tree -->
+  <div class="sitemap-section">
+    <h3>📂 URL Structure (5 Depth Levels)</h3>
+    <div class="sitemap-tree">
+      <ul>
+        <li><a href="/crawl/">/</a> — Homepage <span class="depth">Level 0</span></li>
+        <li>
+          Level 1 — Listings
+          <ul>
+            <li><a href="/crawl/quotes">/quotes</a> — All quotes (paginated) <span class="depth">Level 1</span></li>
+            <li><a href="/crawl/authors">/authors</a> — All authors <span class="depth">Level 1</span></li>
+            <li><a href="/crawl/tags">/tags</a> — All tags <span class="depth">Level 1</span></li>
+            <li><a href="/crawl/about">/about</a> — About page <span class="depth">Level 1</span></li>
+          </ul>
+        </li>
+        <li>
+          Level 2 — Filtered / Paginated
+          <ul>
+            
+            <li><a href="/crawl/quotes/page/1">/quotes/page/1</a> <span class="depth">Level 2</span></li>
+            
+            <li><a href="/crawl/quotes/page/2">/quotes/page/2</a> <span class="depth">Level 2</span></li>
+            
+            <li><a href="/crawl/quotes/page/3">/quotes/page/3</a> <span class="depth">Level 2</span></li>
+            
+            <li><a href="/crawl/quotes/page/4">/quotes/page/4</a> <span class="depth">Level 2</span></li>
+            
+            <li><a href="/crawl/quotes/page/5">/quotes/page/5</a> <span class="depth">Level 2</span></li>
+            
+            
+            <li><a href="/crawl/authors/albert-einstein">/authors/albert-einstein</a> <span class="depth">Level 2</span></li>
+            
+            <li><a href="/crawl/authors/john-lennon">/authors/john-lennon</a> <span class="depth">Level 2</span></li>
+            
+            <li><a href="/crawl/authors/steve-jobs">/authors/steve-jobs</a> <span class="depth">Level 2</span></li>
+            
+            <li>… and 17 more author pages</li>
+            
+            <li><a href="/crawl/tags/action">/tags/action</a> <span class="depth">Level 2</span></li>
+            
+            <li><a href="/crawl/tags/change">/tags/change</a> <span class="depth">Level 2</span></li>
+            
+            <li><a href="/crawl/tags/courage">/tags/courage</a> <span class="depth">Level 2</span></li>
+            
+            <li>… and 17 more tag pages</li>
+          </ul>
+        </li>
+        <li>
+          Level 3 — Individual Items
+          <ul>
+            
+            <li><a href="/crawl/quotes/1">/quotes/1</a> — "Imagination is more important than knowl…" <span class="depth">Level 3</span></li>
+            
+            <li><a href="/crawl/quotes/2">/quotes/2</a> — "Life is what happens when you&#39;re busy ma…" <span class="depth">Level 3</span></li>
+            
+            <li><a href="/crawl/quotes/3">/quotes/3</a> — "The only way to do great work is to love…" <span class="depth">Level 3</span></li>
+            
+            <li>… and 21 more quote pages</li>
+            
+            <li><a href="/crawl/authors/albert-einstein/quotes">/authors/albert-einstein/quotes</a> <span class="depth">Level 3</span></li>
+            
+            <li><a href="/crawl/authors/john-lennon/quotes">/authors/john-lennon/quotes</a> <span class="depth">Level 3</span></li>
+            
+            <li>… and more author quote pages</li>
+          </ul>
+        </li>
+        <li>
+          Level 4 — Deep Pages
+          <ul>
+            <li><a href="/crawl/quotes/1/similar">/quotes/:id/similar</a> — Similar quotes <span class="depth">Level 4</span></li>
+            <li><a href="/crawl/authors/albert-einstein/bio">/authors/:slug/bio</a> — Author biography <span class="depth">Level 4</span></li>
+          </ul>
+        </li>
+        <li>
+          Level 5 — Deepest
+          <ul>
+            <li><a href="/crawl/quotes/1/similar/by-tag">/quotes/:id/similar/by-tag</a> — Similar grouped by tag <span class="depth">Level 5</span></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Total counts -->
+  <div class="sitemap-section">
+    <h3>📊 Expected Crawl Results</h3>
+    <p>A correct crawler visiting this site should discover approximately:</p>
+    <ul>
+      <li><strong>1</strong> homepage</li>
+      <li><strong>4</strong> listing pages (quotes, authors, tags, about)</li>
+      <li><strong>5</strong> pagination pages</li>
+      <li><strong>20</strong> author detail pages + 20 author quote pages + 20 author bio pages</li>
+      <li><strong>20</strong> tag pages</li>
+      <li><strong>24</strong> quote detail pages + similar pages + similar-by-tag pages</li>
+      <li><strong>~162</strong> total unique pages (excluding edge cases)</li>
+    </ul>
+  </div>
+
+  <!-- Edge cases reference -->
+  <div class="sitemap-section">
+    <h3>⚠️ Edge Cases & Traps</h3>
+    <p style="margin-bottom:1rem">These are the crawling challenges built into the site. A great candidate should handle all of them.</p>
+
+    <div class="edge-case-grid">
+      <div class="edge-card">
+        <h4>🔗 Hash / Fragment URLs</h4>
+        <p><code>/about#team</code>, <code>/about#history</code>, <code>/about#contact</code><br>Should NOT be treated as separate pages.</p>
+      </div>
+      <div class="edge-card">
+        <h4>🤖 robots.txt</h4>
+        <p><code>/admin/dashboard</code> and <code>/private/internal</code> are blocked.<br>A respectful crawler should skip them.</p>
+      </div>
+      <div class="edge-card">
+        <h4>↩️ 301 Redirect</h4>
+        <p><code>/old-quotes</code> → <code>/quotes</code><br>Should follow and not revisit.</p>
+      </div>
+      <div class="edge-card">
+        <h4>↩️ 302 Redirect</h4>
+        <p><code>/legacy/authors</code> → <code>/authors</code><br>Temporary redirect.</p>
+      </div>
+      <div class="edge-card">
+        <h4>🔄 Redirect Chain</h4>
+        <p><code>/redirect-chain</code> → <code>/redirect-step2</code> → <code>/quotes</code><br>Two hops.</p>
+      </div>
+      <div class="edge-card">
+        <h4>♾️ Infinite Depth Trap</h4>
+        <p><code>/infinite/2024/01/01</code> → next day → next day → …<br>Without a depth/page limit, this never ends.</p>
+      </div>
+      <div class="edge-card">
+        <h4>🐢 Slow Page</h4>
+        <p><code>/slow-page</code> — 2 second response delay.<br>Tests timeout handling.</p>
+      </div>
+      <div class="edge-card">
+        <h4>📋 Varied Link Formats</h4>
+        <p>Absolute: <code>https://gencay.github.io/crawl/quotes</code><br>Protocol-relative: <code>//gencay.github.io/crawl/authors</code><br>Root-relative: <code>/tags</code></p>
+      </div>
+      <div class="edge-card">
+        <h4>🚫 Skip Targets</h4>
+        <p><code>javascript:void(0)</code>, <code>mailto:info@...</code>, <code>href=""</code>, <code>href="#"</code><br>Should all be ignored.</p>
+      </div>
+      <div class="edge-card">
+        <h4>👻 Hidden Link in Comments</h4>
+        <p><code>&lt;!-- &lt;a href="/crawl/hidden-page"&gt; --&gt;</code><br>In the footer. Should NOT be followed.</p>
+      </div>
+      <div class="edge-card">
+        <h4>📄 Duplicate Content</h4>
+        <p><code>/quotes</code> and <code>/quotes/index</code> serve identical content.<br>Should be deduplicated.</p>
+      </div>
+      <div class="edge-card">
+        <h4>🔍 Query Strings</h4>
+        <p><code>/quotes?sort=newest</code> vs <code>/quotes?sort=oldest</code><br>Same page, different sort. Candidate should decide how to handle.</p>
+      </div>
+      <div class="edge-card">
+        <h4>🌐 External Links</h4>
+        <p>Links to <code>github.com</code> in nav and about page.<br>Crawler must stay in-domain.</p>
+      </div>
+      <div class="edge-card">
+        <h4>🏷️ Meta Robots</h4>
+        <p><code>/about</code> has <code>&lt;meta name="robots" content="nofollow"&gt;</code><br>Links on that page should not be followed (advanced).</p>
+      </div>
+      <div class="edge-card">
+        <h4>🔗 Canonical Tags</h4>
+        <p><code>/quotes</code> pages include <code>&lt;link rel="canonical"&gt;</code><br>Should prefer canonical URL.</p>
+      </div>
+      <div class="edge-card">
+        <h4>📡 X-Robots-Tag Header</h4>
+        <p><code>/admin/*</code> routes send <code>X-Robots-Tag: noindex</code><br>HTTP header-level directive.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Quotes &amp; Authors. All rights reserved.</p>
+    <div class="links">
+      <a href="/crawl/about">About</a>
+      <a href="/crawl/about#contact">Contact</a>
+      <a href="">Home</a>
+    </div>
+  </div>
+</footer>
+<!-- <a href="/crawl/hidden-page">Secret</a> -->
+</body>
+</html>
+

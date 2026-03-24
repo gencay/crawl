@@ -1,0 +1,30 @@
+<%- include('partials/header', { title: 'Quotes by ' + author.name }) %>
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="/">Home</a> &rsaquo; <a href="/authors">Authors</a> &rsaquo;
+    <a href="/authors/<%= slug %>"><%= author.name %></a> &rsaquo; Quotes
+  </div>
+
+  <h2>All Quotes by <%= author.name %></h2>
+
+  <% if (quotes.length === 0) { %>
+    <p class="empty">No quotes found for this author.</p>
+  <% } else { %>
+    <% quotes.forEach(function(q) { %>
+    <div class="card">
+      <blockquote>&ldquo;<%= q.text %>&rdquo;</blockquote>
+      <div class="meta">
+        <a href="/quotes/<%= q.id %>">View details &rarr;</a>
+        <% q.tags.forEach(function(t) { %>
+          <a href="/tags/<%= t %>" class="tag"><%= t %></a>
+        <% }) %>
+      </div>
+    </div>
+    <% }) %>
+  <% } %>
+
+  <a href="/authors/<%= slug %>" class="back-link">&larr; Back to <%= author.name %></a>
+</div>
+
+<%- include('partials/footer') %>

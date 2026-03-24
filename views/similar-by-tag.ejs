@@ -1,0 +1,32 @@
+<%- include('partials/header', { title: 'Similar by Tag \u2014 Quote #' + quote.id }) %>
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="/">Home</a> &rsaquo; <a href="/quotes">Quotes</a> &rsaquo;
+    <a href="/quotes/<%= quote.id %>">Quote #<%= quote.id %></a> &rsaquo;
+    <a href="/quotes/<%= quote.id %>/similar">Similar</a> &rsaquo; By Tag
+  </div>
+
+  <h2>Similar Quotes Grouped by Tag</h2>
+
+  <% Object.keys(grouped).forEach(function(tag) { %>
+    <h3><a href="/tags/<%= tag %>" class="tag" style="font-size:1rem"><%= tag %></a></h3>
+    <% grouped[tag].forEach(function(q) { %>
+    <div class="card">
+      <blockquote>&ldquo;<%= q.text %>&rdquo;</blockquote>
+      <div class="meta">
+        &mdash; <a href="/authors/<%= q.author %>"><%= authors[q.author].name %></a>
+        <a href="/quotes/<%= q.id %>">View &rarr;</a>
+      </div>
+    </div>
+    <% }) %>
+  <% }) %>
+
+  <ul>
+    <li><a href="/quotes/<%= quote.id %>/similar">Back to similar</a></li>
+    <li><a href="/quotes/<%= quote.id %>">Back to quote</a></li>
+    <li><a href="/quotes">All quotes</a></li>
+  </ul>
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,365 @@
+{
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Imagination is more important than knowledge.",
+      "author": "albert-einstein",
+      "tags": [
+        "imagination",
+        "knowledge",
+        "science"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Life is what happens when you're busy making other plans.",
+      "author": "john-lennon",
+      "tags": [
+        "life",
+        "wisdom"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The only way to do great work is to love what you do.",
+      "author": "steve-jobs",
+      "tags": [
+        "motivation",
+        "success",
+        "inspiration"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "In the middle of difficulty lies opportunity.",
+      "author": "albert-einstein",
+      "tags": [
+        "perseverance",
+        "wisdom",
+        "courage"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The future belongs to those who believe in the beauty of their dreams.",
+      "author": "eleanor-roosevelt",
+      "tags": [
+        "dreams",
+        "future",
+        "inspiration"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "It is during our darkest moments that we must focus to see the light.",
+      "author": "aristotle",
+      "tags": [
+        "perseverance",
+        "courage",
+        "philosophy"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Happiness is not something ready made. It comes from your own actions.",
+      "author": "dalai-lama",
+      "tags": [
+        "happiness",
+        "action",
+        "wisdom"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The best time to plant a tree was 20 years ago. The second best time is now.",
+      "author": "chinese-proverb",
+      "tags": [
+        "action",
+        "time",
+        "wisdom"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Turn your wounds into wisdom.",
+      "author": "oprah-winfrey",
+      "tags": [
+        "wisdom",
+        "perseverance",
+        "change"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "author": "winston-churchill",
+      "tags": [
+        "success",
+        "courage",
+        "perseverance"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Be the change that you wish to see in the world.",
+      "author": "mahatma-gandhi",
+      "tags": [
+        "change",
+        "inspiration",
+        "leadership"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "The only thing we have to fear is fear itself.",
+      "author": "franklin-roosevelt",
+      "tags": [
+        "fear",
+        "courage",
+        "leadership"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Strive not to be a success, but rather to be of value.",
+      "author": "albert-einstein",
+      "tags": [
+        "success",
+        "wisdom",
+        "philosophy"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "I have not failed. I've just found 10,000 ways that won't work.",
+      "author": "thomas-edison",
+      "tags": [
+        "perseverance",
+        "science",
+        "motivation"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "The mind is everything. What you think you become.",
+      "author": "buddha",
+      "tags": [
+        "wisdom",
+        "philosophy",
+        "imagination"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "An unexamined life is not worth living.",
+      "author": "socrates",
+      "tags": [
+        "philosophy",
+        "wisdom",
+        "life"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Education is the most powerful weapon which you can use to change the world.",
+      "author": "nelson-mandela",
+      "tags": [
+        "knowledge",
+        "change",
+        "leadership"
+      ]
+    },
+    {
+      "id": 18,
+      "text": "You miss 100% of the shots you don't take.",
+      "author": "wayne-gretzky",
+      "tags": [
+        "action",
+        "courage",
+        "motivation"
+      ]
+    },
+    {
+      "id": 19,
+      "text": "If you look at what you have in life, you'll always have more.",
+      "author": "oprah-winfrey",
+      "tags": [
+        "happiness",
+        "life",
+        "kindness"
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Stay hungry, stay foolish.",
+      "author": "steve-jobs",
+      "tags": [
+        "motivation",
+        "dreams",
+        "inspiration"
+      ]
+    },
+    {
+      "id": 21,
+      "text": "The journey of a thousand miles begins with one step.",
+      "author": "lao-tzu",
+      "tags": [
+        "action",
+        "perseverance",
+        "philosophy"
+      ]
+    },
+    {
+      "id": 22,
+      "text": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+      "author": "ralph-waldo-emerson",
+      "tags": [
+        "courage",
+        "wisdom",
+        "inspiration"
+      ]
+    },
+    {
+      "id": 23,
+      "text": "We become what we think about most of the time.",
+      "author": "earl-nightingale",
+      "tags": [
+        "imagination",
+        "success",
+        "motivation"
+      ]
+    },
+    {
+      "id": 24,
+      "text": "Do what you can, with what you have, where you are.",
+      "author": "theodore-roosevelt",
+      "tags": [
+        "action",
+        "courage",
+        "leadership"
+      ]
+    }
+  ],
+  "authors": {
+    "albert-einstein": {
+      "name": "Albert Einstein",
+      "born": "1879",
+      "died": "1955",
+      "bio": "Albert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics. His work is also known for its influence on the philosophy of science. He received the Nobel Prize in Physics in 1921."
+    },
+    "john-lennon": {
+      "name": "John Lennon",
+      "born": "1940",
+      "died": "1980",
+      "bio": "John Lennon was an English singer, songwriter, and peace activist who gained worldwide fame as the founder and co-lead vocalist of the Beatles, the most commercially successful band in the history of popular music."
+    },
+    "steve-jobs": {
+      "name": "Steve Jobs",
+      "born": "1955",
+      "died": "2011",
+      "bio": "Steve Jobs was an American business magnate, industrial designer, and inventor. He was the co-founder, chairman, and CEO of Apple Inc. He is widely recognized as a pioneer of the personal computer revolution."
+    },
+    "eleanor-roosevelt": {
+      "name": "Eleanor Roosevelt",
+      "born": "1884",
+      "died": "1962",
+      "bio": "Eleanor Roosevelt was an American political figure, diplomat, and activist. She served as the First Lady of the United States from 1933 to 1945 and was a driving force behind the Universal Declaration of Human Rights."
+    },
+    "aristotle": {
+      "name": "Aristotle",
+      "born": "384 BC",
+      "died": "322 BC",
+      "bio": "Aristotle was a Greek philosopher and polymath during the Classical period in Ancient Greece. He was the founder of the Lyceum, the Peripatetic school of philosophy, and the Aristotelian tradition."
+    },
+    "dalai-lama": {
+      "name": "Dalai Lama",
+      "born": "1935",
+      "died": null,
+      "bio": "The 14th Dalai Lama, Tenzin Gyatso, is the current Dalai Lama. He is the spiritual leader of Tibetan Buddhism and was awarded the Nobel Peace Prize in 1989 for his non-violent struggle for the liberation of Tibet."
+    },
+    "chinese-proverb": {
+      "name": "Chinese Proverb",
+      "born": "Ancient",
+      "died": null,
+      "bio": "Chinese proverbs are traditional sayings that express common truths or pieces of advice, originating from the rich cultural and philosophical traditions of China spanning thousands of years."
+    },
+    "oprah-winfrey": {
+      "name": "Oprah Winfrey",
+      "born": "1954",
+      "died": null,
+      "bio": "Oprah Winfrey is an American talk show host, television producer, actress, author, and philanthropist. She is best known for her talk show The Oprah Winfrey Show, which was the highest-rated television program of its kind."
+    },
+    "winston-churchill": {
+      "name": "Winston Churchill",
+      "born": "1874",
+      "died": "1965",
+      "bio": "Sir Winston Churchill was a British politician, army officer, and writer who served as Prime Minister of the United Kingdom during World War II. He is widely regarded as one of the greatest wartime leaders of the 20th century."
+    },
+    "mahatma-gandhi": {
+      "name": "Mahatma Gandhi",
+      "born": "1869",
+      "died": "1948",
+      "bio": "Mahatma Gandhi was an Indian lawyer, anti-colonial nationalist, and political ethicist who employed nonviolent resistance to lead the successful campaign for India's independence from British rule."
+    },
+    "franklin-roosevelt": {
+      "name": "Franklin D. Roosevelt",
+      "born": "1882",
+      "died": "1945",
+      "bio": "Franklin Delano Roosevelt was the 32nd president of the United States, serving from 1933 until his death in 1945. He led the United States through the Great Depression and World War II."
+    },
+    "thomas-edison": {
+      "name": "Thomas Edison",
+      "born": "1847",
+      "died": "1931",
+      "bio": "Thomas Alva Edison was an American inventor and businessman who has been described as America's greatest inventor. He developed many devices including the phonograph, the motion picture camera, and the long-lasting practical electric light bulb."
+    },
+    "buddha": {
+      "name": "Buddha",
+      "born": "563 BC",
+      "died": "483 BC",
+      "bio": "Gautama Buddha was an ascetic and spiritual teacher of South Asia who lived during the 6th century BC. He is the founder of Buddhism and is revered by Buddhists as an enlightened being."
+    },
+    "socrates": {
+      "name": "Socrates",
+      "born": "470 BC",
+      "died": "399 BC",
+      "bio": "Socrates was a Classical Greek philosopher credited as one of the founders of Western philosophy. He is known for the Socratic method of questioning and his contributions to the fields of ethics and epistemology."
+    },
+    "nelson-mandela": {
+      "name": "Nelson Mandela",
+      "born": "1918",
+      "died": "2013",
+      "bio": "Nelson Mandela was a South African anti-apartheid revolutionary and political leader who served as President of South Africa from 1994 to 1999. He was awarded the Nobel Peace Prize in 1993."
+    },
+    "wayne-gretzky": {
+      "name": "Wayne Gretzky",
+      "born": "1961",
+      "died": null,
+      "bio": "Wayne Gretzky is a Canadian former professional ice hockey player and former head coach. He is considered the greatest hockey player of all time and has been called 'The Great One'."
+    },
+    "lao-tzu": {
+      "name": "Lao Tzu",
+      "born": "6th century BC",
+      "died": "Unknown",
+      "bio": "Lao Tzu was an ancient Chinese philosopher and writer. He is the reputed author of the Tao Te Ching, the founder of philosophical Taoism, and a deity in religious Taoism and traditional Chinese religions."
+    },
+    "ralph-waldo-emerson": {
+      "name": "Ralph Waldo Emerson",
+      "born": "1803",
+      "died": "1882",
+      "bio": "Ralph Waldo Emerson was an American essayist, lecturer, philosopher, and poet who led the transcendentalist movement of the mid-19th century. He was a champion of individualism and a prescient critic of societal pressures."
+    },
+    "earl-nightingale": {
+      "name": "Earl Nightingale",
+      "born": "1921",
+      "died": "1989",
+      "bio": "Earl Nightingale was an American radio speaker and author, dealing mostly with the subjects of human character development, motivation, and meaningful existence. He was the voice during the golden age of radio."
+    },
+    "theodore-roosevelt": {
+      "name": "Theodore Roosevelt",
+      "born": "1858",
+      "died": "1919",
+      "bio": "Theodore Roosevelt was the 26th president of the United States, serving from 1901 to 1909. He was a leader of the progressive movement, and he championed his 'Square Deal' domestic policies."
+    }
+  }
+}

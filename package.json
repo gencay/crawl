@@ -1,0 +1,15 @@
+{
+  "name": "crawl-site",
+  "version": "1.0.0",
+  "description": "Interview target site for web crawler questions",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ejs": "^3.1.9"
+  }
+}
